@@ -95,7 +95,7 @@ fun HealthDashboard() {
                 .verticalScroll(rememberScrollState())
         ) {
             Text(
-                text = "MOBILE HEALTH ANALYZER",
+                text = "MOBPULSE HEALTH ANALYZER",
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(bottom = 16.dp)

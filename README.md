@@ -1,8 +1,8 @@
-# Health Analyzer 📱💻
+# MobPulse 📱💻
 
 A comprehensive health and performance monitoring tool for both **Laptops (Python)** and **Mobile Devices (Android)**.
 
-## 📱 Mobile App (Android)
+## 📱 Mobile App (MobPulse)
 
 Built with **Jetpack Compose**, this app provides a deep dive into your phone's status and helps diagnose performance issues.
 

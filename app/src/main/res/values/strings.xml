@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">lap_Health</string>
+    <string name="app_name">MobPulse</string>
     <string name="action_go">Go</string>
     <string name="baking_title">Baking with Gemini</string>
     <string name="label_prompt">Prompt</string>

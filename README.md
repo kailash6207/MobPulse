@@ -14,14 +14,14 @@ A unified hardware vitals, battery wear, system diagnostics, and performance opt
 
 ```mermaid
 graph TD
-    A["🖥️ Windows Hardware & Kernel<br/>(ACPI Thermals, Battery, RAM, Disks, Wi-Fi)"]
-    B["⚙️ Telemetry & Scoring Engine<br/>(Health Score, Turbo RAM Purge, SSD Benchmark)"]
-    C["🎨 CustomTkinter Dashboard<br/>(Circular Health Gauge, Vitals Cards, Vector Waveform)"]
-    D["💾 Persistence & Export<br/>(HTML Dashboard Report, CSV Logs, Text Audit)"]
+    A["Windows Hardware and Kernel<br/>ACPI Thermals, Battery, RAM, Disks, Wi-Fi"]
+    B["Telemetry and Scoring Engine<br/>Health Score, Turbo RAM Purge, SSD Benchmark"]
+    C["CustomTkinter Dashboard<br/>Circular Health Gauge, Vitals Cards, Vector Waveform"]
+    D["Persistence and Export<br/>HTML Dashboard Report, CSV Logs, Text Audit"]
 
-    A -->|Raw Telemetry| B
-    B -->|Live Metrics & Score (0-100)| C
-    B -->|Export & Stream| D
+    A -->|Raw Telemetry Data| B
+    B -->|Live Metrics and Health Score| C
+    B -->|Export and Stream Logs| D
 ```
 
 ---
@@ -31,15 +31,15 @@ graph TD
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Kernel as 🪟 Windows Hardware
-    participant Engine as ⚙️ Telemetry Engine
-    participant GUI as 🎨 Dashboard UI
+    participant Kernel as Windows Hardware
+    participant Engine as Telemetry Engine
+    participant GUI as Dashboard UI
 
     loop Every 3 Seconds
-        Engine->>Kernel: 1. Poll Vitals (CPU Temp, Battery, RAM, Disk, Ping)
+        Engine->>Kernel: 1. Poll Vitals: CPU, Battery, RAM, Disk, Ping
         Kernel-->>Engine: 2. Return Hardware Telemetry
-        Engine->>Engine: 3. Compute Health Score (0-100) & Advisories
-        Engine->>GUI: 4. Update Health Gauge, Vitals & Waveform
+        Engine->>Engine: 3. Compute Health Score and Advisories
+        Engine->>GUI: 4. Update Health Gauge, Cards and Waveform
     end
 ```
 
@@ -49,7 +49,7 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    A["Click 'Turbo RAM Purge'"] --> B["Trims Working Sets via Windows API"] --> C["Frees Standby RAM (900+ MB)"]
+    A["Click Turbo RAM Purge"] --> B["Trims Working Sets via Windows API"] --> C["Frees Standby RAM: 900+ MB"]
 ```
 
 ---
